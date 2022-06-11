@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lock"
+    tools:context=".MainActivity7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Shop Details"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/amarante"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="55dp"
+        android:hint="Enter Your Shop Name"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/shop_Address"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="55dp"
+        android:hint="Enter Your Shop Address"
+        android:textColorHint="@color/black"/>
+
+    <Button
+        android:id="@+id/Submit_it"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="Submit_It"
+        android:layout_marginTop="66dp"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

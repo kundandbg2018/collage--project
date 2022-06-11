@@ -1,0 +1,48 @@
+package com.example.myapplication;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class HomeActivity extends AppCompatActivity {
+
+    ImageView Tire, Battery, Towing;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+
+        Tire=findViewById(R.id.imageView4);
+        Battery=findViewById(R.id.imageView2);
+        Towing=findViewById(R.id.imageView6);
+
+
+        Tire.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,MainActivity4.class);
+                startActivity(intent);
+            }
+        });
+
+        Battery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,MainActivity4.class);
+                startActivity(intent);
+            }
+        });
+
+        Towing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,MainActivity4.class);
+                startActivity(intent);
+            }
+        });
+    }
+}
